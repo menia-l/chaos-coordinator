@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Story | Creative Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+        }
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+        }
+        h1, h2 {
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: #00e676;
+            font-weight: 700;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #00e676;
+            color: #121212;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+        .small-btn {
+            padding: 6px 14px;
+            background: #616161;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: 400;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin: 0 5px;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .footer-links a {
+            color: #00e676;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .recommendation-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 15px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        .section-image {
+            max-width: 100%;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+            object-fit: contain;
+        }
+        .image-placeholder {
+            width: 300px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00e676;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section" id="intro">
+        <div class="section-content">
+            <h1 class="fade-in">👋 Hi! I'm a <span class="highlight">Builder & Innovator</span></h1>
+            <p class="fade-in">I'm passionate about turning chaos into impactful products. Check out my journey:</p>
+            <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/chaos-coordinator.png?raw=true" 
+                 alt="Chaos Coordinator" 
+                 class="section-image fade-in">
+            <button class="btn fade-in" onclick="scrollToSection('passion')">Explore</button>
+        </div>
+    </section>
+
+    <section class="section" id="passion">
+        <div class="section-content">
+            <h2 class="fade-in">🔥 What I'm Passionate About</h2>
+            <p class="fade-in">I love building impactful ventures and sharing insights about product building.</p>
+            <div class="buttons-container fade-in">
+                <button class="small-btn" onclick="window.open('https://menia.medium.com', '_blank')">📖 Read here</button>
+                <button class="small-btn" onclick="window.open('https://github.com/menia-l/chaos-coordinator/raw/refs/heads/main/BETA_than_ever.mp3', '_blank')">🎧 I prefer an audio version</button>
+            </div>
+            <div class="image-placeholder fade-in">
+                <p>Image Placeholder: Your Work</p>
+            </div>
+            <button class="btn fade-in" onclick="scrollToSection('proof')">Next</button>
+        </div>
+    </section>
+
+    <section class="section" id="proof">
+        <div class="section-content">
+            <h2 class="fade-in">💬 What People Say About Me</h2>
+            <div class="recommendation-container fade-in">
+                <p>"Chaos Coordinator, Huge Driver for Change, Always Engaging & Open."</p>
+            </div>
+            <div class="image-placeholder fade-in">
+                <p>Image Placeholder: Testimonials</p>
+            </div>
+            <button class="btn fade-in" onclick="scrollToSection('personality')">Next</button>
+        </div>
+    </section>
+
+    <section class="section" id="personality">
+        <div class="section-content">
+            <h2 class="fade-in">🎭 Personality: Debater (ENTP)</h2>
+            <p class="fade-in">"Sharing the personality type with Tyrion Lannister—sadly, not his wine cellar!" 🍷</p>
+            <div class="image-placeholder fade-in">
+                <p>Image Placeholder: Personality Visual</p>
+            </div>
+            <button class="btn fade-in" onclick="scrollToSection('innovation')">Discover More</button>
+        </div>
+    </section>
+
+    <section class="section" id="innovation">
+        <div class="section-content">
+            <h2 class="fade-in">🛠️ Creative Innovator</h2>
+            <p class="fade-in">Awarded for introducing a gaming-inspired solution to the automotive industry.</p>
+            <div class="image-placeholder fade-in">
+                <p>Image Placeholder: Innovation Project</p>
+            </div>
+            <button class="btn fade-in" onclick="scrollToSection('connect')">Connect With Me</button>
+        </div>
+    </section>
+
+    <section class="section" id="connect">
+        <div class="section-content">
+            <h2 class="fade-in">🎧 Let's Connect!</h2>
+            <p class="fade-in">Join me on my podcast or connect directly:</p>
+            <div class="image-placeholder fade-in">
+                <p>Image Placeholder: Contact Visual</p>
+            </div>
+            <div class="footer-links fade-in">
+                <a href="https://menia.medium.com" target="_blank">📖 Blog Series</a>
+                <a href="#" target="_blank">🎙️ Podcast</a>
+                <a href="#" target="_blank">🔗 LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
