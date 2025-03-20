@@ -92,6 +92,16 @@
             margin: 20px 0;
             display: inline-block;
         }
+        .responsive-img {
+        max-width: 80%;
+        max-height: 50vh;
+        height: auto;
+        width: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
         .section-image {
             max-width: 100%;
             width: 300px;
@@ -119,7 +129,7 @@
     <section class="section" id="intro">
         <div class="section-content">
             <h1 class="fade-in">👋 Hi! I'm a <span class="highlight">Builder & Innovator</span></h1>
-            <p class="fade-in">I'm passionate about turning chaos into impactful products. Check out my journey:</p>
+            <p class="fade-in">Chaos? I call it a blank canvas for innovation. See how I turn the unpredictable into impactful products! 🎨⚡:</p>
             <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/chaos-coordinator-min.png?raw=true" 
                  alt="Chaos Coordinator" 
                  class="section-image fade-in">
@@ -136,44 +146,64 @@
                 <button class="small-btn" onclick="window.open('https://soundcloud.com/menia-l/beta_than_ever', '_blank')">🎧 Prefer to listen?</button>
             </div>
             <div class="image-container fade-in">
-                <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/Blog.png?raw=true" alt="My Work" class="section-img">
+                <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/Blog.png?raw=true" alt="My Work" class="responsive-img">
             </div>
             <button class="btn fade-in" onclick="scrollToSection('proof')">Next</button>
         </div>
     </section>
 
 
+
     <section class="section" id="proof">
         <div class="section-content">
             <h2 class="fade-in">💬 What People Say About Me</h2>
             <div class="recommendation-container fade-in">
-                <p>"Chaos Coordinator, Huge Driver for Change, Always Engaging & Open. And yes, autocorrect thinks I'm a 'Menu'—apparently I'm full of good options!" 😅</p>
+                <p>"Chaos Coordinator, Huge Driver for Change, Curious, Always Engaging & Open. And yes, autocorrect thinks I'm a 'Menu'—apparently I'm full of good options!" 😅</p>
             </div>
             <div class="recommendation-image fade-in">
-                <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/Recommendation.png?raw=true" alt="LinkedIn Recommendation" class="recommendation-img">
+                <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/LI_recommendation.png?raw=true" alt="LinkedIn Recommendation" class="responsive-img">
+            </div>
+            <button class="btn fade-in" onclick="scrollToSection('handbook')">Next</button>
+        </div>
+    </section>
+
+    <section class="section" id="handbook">
+        <div class="section-content">
+            <h2 class="fade-in">📖 The Product Handbook</h2>
+            <p class="fade-in">I recently launched a Product Handbook to guide our R&D on building impactful, scalable products. Check it out!</p>
+            <div class="buttons-container fade-in">
+                <button class="small-btn" onclick="window.open('https://online.fliphtml5.com/faypl/lwaw/', '_blank')">📕 Read the Handbook</button>
+            </div>
+            <div class="image-container fade-in">
+                <a href="https://online.fliphtml5.com/faypl/lwaw/" target="_blank">
+                    <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/handbook.png?raw=true" alt="Product Handbook Preview" class="responsive-img">
+                </a>
             </div>
             <button class="btn fade-in" onclick="scrollToSection('personality')">Next</button>
         </div>
     </section>
-
-
+    
     <section class="section" id="personality">
         <div class="section-content">
             <h2 class="fade-in">🎭 Personality: Debater (ENTP)</h2>
-            <p class="fade-in">"Sharing the personality type with Tyrion Lannister—sadly, not his wine cellar!" 🍷</p>
-            <div class="image-placeholder fade-in">
-                <p>Image Placeholder: Personality Visual</p>
+            <p class="fade-in">"Sharing the personality type with Tyrion Lannister—He maneuvers the politics of Westeros; I navigate the chaos of product development. Both require sharp thinking, adaptability, and knowing when to pour a drink." 🔥🍷</p>
+            <div class="image-container fade-in">  
+                <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/personality.png?raw=true" 
+                     alt="Chaos Coordinator" 
+                     class="responsive-img">
             </div>
+            <p class="fade-in"><a href="https://www.16personalities.com/entp-personality" target="_blank" style="color: #00e676; text-decoration: none; font-weight: 600;">🔍 Learn more about the ENTP personality</a></p>
             <button class="btn fade-in" onclick="scrollToSection('innovation')">Discover More</button>
         </div>
     </section>
 
+
     <section class="section" id="innovation">
         <div class="section-content">
             <h2 class="fade-in">🛠️ Creative Innovator</h2>
-            <p class="fade-in">Awarded for introducing a gaming-inspired solution to the automotive industry.</p>
-            <div class="image-placeholder fade-in">
-                <p>Image Placeholder: Innovation Project</p>
+            <p class="fade-in">Awarded for introducing video game physics into real world impact—revolutionizing how liquids behaves in car crash simulations. Who knew gaming could help cars crash smarter? 🎮🚗💥</p>
+            <div class="image-container fade-in">
+                <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/Award.png?raw=true" alt="Innovation Award" class="responsive-img">
             </div>
             <button class="btn fade-in" onclick="scrollToSection('connect')">Connect With Me</button>
         </div>
@@ -182,14 +212,13 @@
     <section class="section" id="connect">
         <div class="section-content">
             <h2 class="fade-in">🎧 Let's Connect!</h2>
-            <p class="fade-in">Join me on my podcast or connect directly:</p>
-            <div class="image-placeholder fade-in">
-                <p>Image Placeholder: Contact Visual</p>
+            <div class="image-container fade-in">
+                <img src="https://github.com/menia-l/chaos-coordinator/blob/main/images/Connect-min.png?raw=true" alt="Connect Visual" class="responsive-img">
             </div>
             <div class="footer-links fade-in">
-                <a href="https://menia.medium.com" target="_blank">📖 Blog Series</a>
-                <a href="#" target="_blank">🎙️ Podcast</a>
-                <a href="#" target="_blank">🔗 LinkedIn</a>
+                <a href="https://menia.medium.com" target="_blank">📖 Medium blog</a>
+                <a href="mailto:menialai@gmail.com" target="_blank">📬 Email Me</a>
+                <a href="https://www.linkedin.com/in/asimenialaina/" target="_blank">🔗 LinkedIn</a>
             </div>
         </div>
     </section>
