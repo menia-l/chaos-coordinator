@@ -85,6 +85,15 @@
             margin: 0 10px;
             text-decoration: none;
         }
+        .responsive-img {
+        max-width: 80%;
+        max-height: 50vh;
+        height: auto;
+        width: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
         .recommendation-images {
             display: flex;
             flex-direction: column;
@@ -93,11 +102,11 @@
             margin-top: 20px;
         }
         .recommendation-img {
-        width: 350px;
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            width: 90%;             /* increase width from 350px to 90% of container */
+            max-width: 600px;       /* limit so it doesn't get too big on wide screens */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
         }
         .recommendation-container {
             background: rgba(255, 255, 255, 0.05);
